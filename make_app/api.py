@@ -49,7 +49,7 @@ def add_sales_order(doc, method):
         print(f"Failed to send sales order: {response.text}")
 
 
-def on_lead_created(doc, method)
+def on_lead_created(doc, method):
     frappe.logger().info(f"New Lead Created: {doc.name}, Email: {doc.email_id}")
 
     payload = {
